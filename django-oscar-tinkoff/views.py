@@ -9,10 +9,6 @@ from rest_framework.response import Response
 from oscar.core.loading import get_model
 from oscarapicheckout import utils
 
-from apps.checkout.creditcards import serializers
-from apps.checkout.creditcards.mixins import PaymentMixin
-from apps.checkout.creditcards.tinkoff import Tinkoff
-from .methods import CreditCard
 import uuid
 
 Order = get_model('order', 'Order')

@@ -18,8 +18,8 @@ class CreditCard(PaymentMethod):
     status initially that requires the client app to make a form post, which in-turn
     redirects back to us. This is a common pattern in PCI SAQ A-EP ecommerce sites.
     """
-    name = 'Credit Card'
-    code = 'credit-cards'
+    name = 'Tinkoff'
+    code = 'tinkoff'
     serializer_class = PaymentMethodSerializer
 
     tinkoff = Tinkoff()
